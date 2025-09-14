@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Foto = () => {
-  
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <Navbar />
@@ -80,19 +79,19 @@ const Foto = () => {
               ].map((album, index) => (
                 <Card key={index} className="shadow-elegant hover:shadow-lg transition-shadow group cursor-pointer">
                   <div className="relative">
-                      {/* Ganti placeholder emoji dengan gambar dummy */}
-                      <img
-                        src={`https://picsum.photos/seed/${index}/600/400`}
-                        alt={album.judul}
-                        className="w-full h-48 object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-2 right-2">
-                        <Badge className="bg-government-blue">{album.kategori}</Badge>
-                      </div>
-                      <div className="absolute bottom-2 left-2">
-                        <Badge variant="secondary">{album.jumlahFoto} Foto</Badge>
-                      </div>
+                    {/* Ganti placeholder emoji dengan gambar dummy */}
+                    <img
+                      src={`https://picsum.photos/seed/${index}/600/400`}
+                      alt={album.judul}
+                      className="w-full h-48 object-cover rounded-t-lg"
+                    />
+                    <div className="absolute top-2 right-2">
+                      <Badge className="bg-government-blue">{album.kategori}</Badge>
                     </div>
+                    <div className="absolute bottom-2 left-2">
+                      <Badge variant="secondary">{album.jumlahFoto} Foto</Badge>
+                    </div>
+                  </div>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg text-government-blue group-hover:text-education-green transition-colors">
                       [Template - {album.judul}]
