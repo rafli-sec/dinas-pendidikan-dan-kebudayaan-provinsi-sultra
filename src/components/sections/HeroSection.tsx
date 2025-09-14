@@ -19,8 +19,9 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-3xl">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-white" />
+            <div className="w-12 h-12  backdrop-blur-sm rounded-lg flex items-center justify-center">
+              {/* <GraduationCap className="w-6 h-6 text-white" /> */}
+              <img src="../../../public/logo.png" alt="logo sultra" />
             </div>
             <div className="text-white/90">
               <p className="text-sm font-medium">Pemerintah Provinsi</p>
