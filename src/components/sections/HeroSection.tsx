@@ -34,23 +34,23 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-            Membangun pendidikan berkualitas untuk masa depan yang gemilang. 
-            Melayani masyarakat dengan dedikasi dan inovasi dalam mengembangkan 
+            Membangun pendidikan berkualitas untuk masa depan yang gemilang.
+            Melayani masyarakat dengan dedikasi dan inovasi dalam mengembangkan
             sistem pendidikan di Sulawesi Tenggara.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
+            <Button
               size="lg"
               className="bg-white text-government-blue hover:bg-white/90 shadow-medium"
             >
               <span>Layanan Publik</span>
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white/10 hover:text-white border-2"
+              className="border-white   hover:text-white  bg-white/10 text-white border-2"
             >
               Profil Dinas
             </Button>
