@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Foto = () => {
+  
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <Navbar />
@@ -79,17 +80,19 @@ const Foto = () => {
               ].map((album, index) => (
                 <Card key={index} className="shadow-elegant hover:shadow-lg transition-shadow group cursor-pointer">
                   <div className="relative">
-                    {/* Placeholder untuk foto utama */}
-                    <div className="w-full h-48 bg-gradient-primary/20 rounded-t-lg flex items-center justify-center">
-                      <div className="text-6xl text-government-blue/30">📸</div>
+                      {/* Ganti placeholder emoji dengan gambar dummy */}
+                      <img
+                        src={`https://picsum.photos/seed/${index}/600/400`}
+                        alt={album.judul}
+                        className="w-full h-48 object-cover rounded-t-lg"
+                      />
+                      <div className="absolute top-2 right-2">
+                        <Badge className="bg-government-blue">{album.kategori}</Badge>
+                      </div>
+                      <div className="absolute bottom-2 left-2">
+                        <Badge variant="secondary">{album.jumlahFoto} Foto</Badge>
+                      </div>
                     </div>
-                    <div className="absolute top-2 right-2">
-                      <Badge className="bg-government-blue">{album.kategori}</Badge>
-                    </div>
-                    <div className="absolute bottom-2 left-2">
-                      <Badge variant="secondary">{album.jumlahFoto} Foto</Badge>
-                    </div>
-                  </div>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg text-government-blue group-hover:text-education-green transition-colors">
                       [Template - {album.judul}]
@@ -114,7 +117,7 @@ const Foto = () => {
               ))}
             </div>
 
-            {/* Foto Pilihan */}
+            {/* Foto Pilihan 
             <Card className="shadow-elegant">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-government-blue">
@@ -138,7 +141,7 @@ const Foto = () => {
                   ))}
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Statistik Galeri */}
             <div className="grid md:grid-cols-4 gap-4">
