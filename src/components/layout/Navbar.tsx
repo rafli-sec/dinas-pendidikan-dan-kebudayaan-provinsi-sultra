@@ -34,7 +34,10 @@ const Navbar = () => {
         { href: "/pelayanan/pinjam-ruang", label: "Pinjam Ruang & Agenda" },
         { href: "/pelayanan/sop", label: "Standar Operasional Prosedur" },
         { href: "/pelayanan/sarana-prasarana", label: "Sarana Prasarana" },
-        { href: "/pelayanan/standar-pelayanan", label: "Standar Pelayanan Publik" },
+        {
+          href: "/pelayanan/standar-pelayanan",
+          label: "Standar Pelayanan Publik",
+        },
         { href: "/pelayanan/pengaduan", label: "Pengaduan" },
         { href: "/pelayanan/prestasi", label: "Prestasi Kinerja Layanan" },
         { href: "/pelayanan/klinik", label: "Klinik Pendidikan" },
@@ -56,8 +59,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">D</span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img src="../../../public/logo.png" alt="logo dinas pendidikan" />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-government-blue">
